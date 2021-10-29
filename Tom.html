@@ -7,5 +7,54 @@
     </head>
     <body>
         <h1>Media Manipulation</h1>
+        <p>Broken down to its simplest form, an image is just a collection of pixels with a certain resolution and file format. A video is just a collection of images strung together with certain parameters. With these forms of media being as simple as they are, it's relatively simple to manipulate them using basic computer-enabled tools and algorithms, for a vast array of purposes and results.</p>
+        <h2>Basic adjustment</h2>
+        <h3>Images</h3>
+        <p>Given that the pixels comprising an image are defined by only a few numerical values, it's easy for a computer to adjust those values to create a certain effect.</p>
+        <p>Some of the simplest changes that can be made are:</p>
+        <ul>
+            <li>Brightness</li>
+            <li>Contrast</li>
+            <li>Hue</li>
+        </ul>
+        <p>And all of these can be achieved by shifting the three RGB colour values.</p>
+        <p>For example, with 8-bit RGB colour space, a pixel may be defined as (x,y,z), where all three values are in the interval [0,255].</p>
+        <p>Increasing brightness would involve increasing all 3 values, increasing contrast would involve moving the values further from the median point, and changing hue would involve increasing some values and decreasing others.</p>
+        <p>These basic features and others like them are present on most consumer-grade image handling software, such as Photoshop, Instagram, and even Preview.</p>
+        <p>More complex algorithms are able to produce more interesting effects, such as:</p> 
+        <ul>
+            <li>
+                Removing the background of an image by setting all pixels in a certain area to be completely transparent
+                <ul>
+                    <li>Transparency is controlled by a forth value, called the alpha channel</li>
+                    <li>Identifying the area to be altered is usually the most difficult part, and often requires manual adjustment by the user</li>
+                </ul>
+            </li>
+            <li>
+                Converting an image from one filetype to another
+                <ul>
+                    <li>Different image filetypes support different attributes, such as transparency (present in .png files but not .jpg files)</li>
+                    <li>Different filetypes often use different levels of image compression, which reduces the file size and sometimes loses visual information in the process</li>
+                </ul>
+            </li>
+            <li>
+                Identifying faces or other recognisable objects in an image
+                <ul>
+                    <li>
+                        This is exceptionally useful for algorithms which automatically organise and label collections of images
+                    </li>
+                    <li>
+                        However, this technology still has a long way to go, as demonstrated by the relative effectiveness of CAPTCHA tests and the common mistakes made by content filters (such as believing sand dunes to be inappropriate images)
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>These tools assist image analysis and make it far easier to produce better-looking images in a format suitable for their intended use. Advancements made in basic image-adjustment algorithms are incredibly useful and are frequently used by the vast majority of people in digitally developed nations.</p>
+        <h3>Videos</h3>
+        <h2>More advanced applications</h2>
+        <h3>Digital art</h3>
+        <!--Includes deepdreamgenerator.com-->
+        <!--Includes myheritage?-->
+        <h3>Deepfakes and ethics</h3>
     </body>
 </html>
