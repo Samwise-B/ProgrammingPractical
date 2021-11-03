@@ -8,92 +8,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- <link href="style.css" rel="stylesheet" > -->
+        <link href="style.css" rel="stylesheet" >
         <title>Harrison</title>
-        <style>
-            /* div.fixed {
-                        position: fixed;
-                        top: 50vh;
-                        right: 50vw;
-                        width: 100vw;
-                        border: 3px solid #73AD21;
-                    } */
-            img.left{
-                position: relative;
-                top: 0;
-                left: 0;
-                /* border: 3px solid #212aad; */
-            }
-            img.right{
-                position: relative;
-                top: 0;
-                left: 0;
-                /* border: 3px solid #212aad; */
-            }
-            body {
-	                width: 100vw;
-	                height: 100vh;
-	                padding: 1rem;
-	                font-family: Avenir, sans-serif;
-	                font-size: 112.5%;
-	                color: #124;
-	                background-image: radial-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0) 40vw), radial-gradient(rgba(0, 128, 0, 0.3), rgba(0, 128, 0, 0) 40vw), radial-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 40vw), radial-gradient(rgba(255, 255, 0, 0.3), rgba(255, 255, 0, 0) 40vw), radial-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0) 40vw);
-	                background-position: -40vw 14rem, 50% 10rem, 60vw 14rem, -10vw calc(14rem + 20vw), 30vw calc(14rem + 20vw);
-	                /* background-size: 80vw 80vw; */
-	                background-repeat: no-repeat;
-	            }
-
-            main {
-            max-width: 1200px;
-            margin-right: auto;
-            margin-left: auto;
-            }
-            .cards
-            {
-                display: flex;
-	            flex-direction: column;
-	            margin: -1rem;
-	            list-style: none;
-            }
-            @media (min-width: 600px) {
-	            .cards {
-	                flex-direction: row;
-	            }
-	        }
-            .card:hover {background-color: #463e8e}
-
-            .card:active {
-                background-color: #463e8e;
-                box-shadow: 0 5px #666;
-                transform: translateY(4px);
-            }
-
-            .card {
-            flex: 1;
-            margin: 1rem;
-            padding: 1rem;
-            background-color: white;
-            border-radius: 0.5rem;
-            box-shadow: 0 0 6rem rgba(0, 0, 0, 0.1);
-            }
-            .card * {
-            margin-bottom: 1rem;
-            }
-
-            .card--image {
-            font-size: 6rem;
-            line-height: 1;
-            }
-            .card.-red .card--image {
-            color: #ff8080;
-            }
-            .card.-green .card--image {
-            color: #80c080;
-            }
-            .card.-blue .card--image {
-            color: #8080ff;
-            }
-        </style>
     </head>
     <body class="fw-bolder">
         <div class=".container">
@@ -107,7 +23,23 @@
                     <img class="left" src="https://digitalworld839.com/ezoimgfmt/digitalworld839.b-cdn.net/wp-content/uploads/Virtual-Coaching.jpg?ezimgfmt=ng:webp/ngcb3" alt="Uses of computer in hospitals" width="300" height="200">
                     <img class="right" src="https://digitalworld839.com/ezoimgfmt/digitalworld839.b-cdn.net/wp-content/uploads/digital-library.jpg?ezimgfmt=ng:webp/ngcb3" alt="Uses of computer in home" width="300" height="200">
                 </div> -->
-                <ul class="cards">
+                <div class="row">
+                    <div class="column" style="background-color:transparent;">
+                      <h2>Virtual Coaching</h2>
+                      <img class="left" src="https://digitalworld839.com/ezoimgfmt/digitalworld839.b-cdn.net/wp-content/uploads/Virtual-Coaching.jpg?ezimgfmt=ng:webp/ngcb3" alt="Uses of computer in hospitals" width="300" height="200">
+                      <p>Due to the pandemic, it's impossible for students gathering in classrooms for lessons. Computers make online learning available to everyone.</p>
+                      <p>In some counties, students can complete all of their academic requirements online just by using computers and other devices such as handheld gadgets, smartphones, and laptops. The online courses are facilitated by an authorized educator who keeps in touch with students virtually.</p>
+                      <a href="https://www.elmhurst.edu/blog/virtual-learning/" class="btn btn-info" role="button">More</a>
+                    </div>
+                    <div class="column" style="background-color:transparent;">
+                      <h2>Instant Access to Information</h2>
+                      <img class="right" src="https://digitalworld839.com/ezoimgfmt/digitalworld839.b-cdn.net/wp-content/uploads/digital-library.jpg?ezimgfmt=ng:webp/ngcb3" alt="Uses of computer in home" width="300" height="200">
+                      <p>By using computers along with the Internet students are able to have access to a wealth of knowledge instantly on the Internet. Since this is a huge information database that can be used to extract any information on a variety of topics.</p>
+                      <p>The Internet is presently a digital library used to be. It is simpler for both teachers and students to turn on the Internet and simply need to enter a couple of keywords into a search engine is everything necessary to pull up all the information instead of look for information in thick books.</p>
+                      <a href="https://www.techprevue.com/ways-students-life-simplified-computers/#Fast_access_to_research_and_information" class="btn btn-info" role="button">More</a>
+                    </div>
+                  </div>
+                <!-- <ul class="cards">
                     <li class="card -red">
                     <div class="card--image">✤</div><h2 id="hospital" style="z-index: 1000">Virtual Coaching</h2>
                     <img class="left" src="https://digitalworld839.com/ezoimgfmt/digitalworld839.b-cdn.net/wp-content/uploads/Virtual-Coaching.jpg?ezimgfmt=ng:webp/ngcb3" alt="Uses of computer in hospitals" width="300" height="200">
@@ -121,7 +53,7 @@
                     <p>By using computers along with the Internet students are able to have access to a wealth of knowledge instantly on the Internet.</p>
                     <a href="https://www.techprevue.com/ways-students-life-simplified-computers/#Fast_access_to_research_and_information" class="stretched-link"></a>
                 </li>
-                </ul>
+                </ul> -->
             </main>
             <!-- <ol>
                 <li>Complete inventory</li>
@@ -145,7 +77,7 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="url" data-bs-parent="#moreinf">
                     <div class="accordion-body">
-                        <a href="https://www.chtips.com/computer-fundamentals/uses-of-computer-in-different-fields" class="text-success">Main Page</a>
+                        <a href="index.html" class="text-success">Main Page</a>
                     </div>
                 </div>
             </div>
