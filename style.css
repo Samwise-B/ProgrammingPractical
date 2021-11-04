@@ -107,3 +107,8 @@ color: #8080ff;
     background-color: grey;
     color:white;
 }
+
+figcaption {
+    font-style: italic;
+    font-size: 16px;
+}
