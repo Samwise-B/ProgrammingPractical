@@ -118,3 +118,10 @@ figcaption {
     font-style: italic;
     font-size: 16px;
 }
+
+h1 {
+    margin-bottom: 1%;
+    padding: 0.5%;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(66, 148, 255, 0.349), rgba(255,0,0,0));
+}
