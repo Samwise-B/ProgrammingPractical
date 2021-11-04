@@ -1,25 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="favicon.png" type="image/x-icon">
+        
         <title>Media Manipulation</title>
-
-        <style>
-            .column {
-                float: left;
-            }
-
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-        </style>
-
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet">
-
     </head>
     <body>
 
@@ -32,12 +20,12 @@
         </div>
 
 
-        <h1>Media Manipulation</h1>
-        <p style="width:83%">Broken down to its simplest form, an image is just a collection of pixels with a certain resolution and file format. A video is just a collection of images strung together with certain parameters. With these forms of media being as simple as they are, it's relatively simple to manipulate them using basic computer-enabled tools and algorithms, for a vast array of purposes and results.</p>
+        <h1>Uses of Media Manipulation</h1>
+        <p style="width:95%">Broken down to its simplest form, an image is just a collection of pixels with a certain resolution and file format. A video is just a collection of images strung together with certain parameters. With these forms of media being as simple as they are, it's relatively simple to manipulate them using basic computer-enabled tools and algorithms, for a vast array of purposes and results.</p>
         <h2>Basic adjustment</h2>
         <h3>Images</h3>
         <div class="row">
-            <div class="column" style="width: 50%; margin-right: 5%;">
+            <div class="basiccolumn" style="width: 50%; margin-right: 2%;">
                 <p>Given that the pixels comprising an image are defined by only a few numerical values, it's easy for a computer to adjust those values to create a certain effect.</p>
                 <p>Some of the simplest changes that can be made are:</p>
                 <ul>
@@ -50,16 +38,16 @@
                 <p>Increasing brightness would involve increasing all 3 values, increasing contrast would involve moving the values further from the median point, and changing hue would involve increasing some values and decreasing others.</p>
                 <p>These basic features and others like them are present on most consumer-grade image handling software, such as Photoshop, Instagram, and even Preview.</p>
             </div>
-            <div class="column">
-                <figure style="margin: 0%;">
-                    <img src="images/histogram.png" alt="An image with histogram before and after the contrast is raised" width="500px">
+            <div class="basiccolumn" style="width: 45%;">
+                <figure style="margin: 0%; margin-top: 2%;">
+                    <img src="images/histogram.png" alt="An image with histogram before and after the contrast is raised" width="630px">
                     <figcaption><strong>1.1</strong> An image given increased contrast, shown by the range of histogram values</figcaption>
                 </figure>
             </div>
         </div>
         <div class="row">
-            <div class="column" style="width: 55%; margin-right: 5%;">
-                <p>More complex algorithms are able to produce more interesting effects, such as:</p> 
+            <div class="basiccolumn" style="width: 50%; margin-right: 5%;">
+                <p><br>More complex algorithms are able to produce more interesting effects, such as:</p> 
                 <ul>
                     <li>
                         Removing the background of an image by setting all pixels in a certain area to be completely transparent
@@ -95,18 +83,18 @@
                         </ul>
                     </li>
                 </ul>
-                <p>All these tools assist image analysis and make it far easier to produce better-looking images in a format suitable for their intended use. Advancements made in basic image-adjustment algorithms are incredibly useful and are frequently used by the vast majority of people in digitally developed nations.</p>
+                <p>All these tools assist image analysis and make it far easier to produce better-looking images in a format suitable for their intended use. Advancements made in basic image-adjustment algorithms are incredibly useful and are frequently used by the vast majority of people in digitally developed nations.<br><br></p>
             </div>
-            <div class="column">
+            <div class="basiccolumn" style="width: 40%;">
                 <figure style="margin: 0%; margin-top: 20%;">
-                    <img src="images/noise.jpg" alt="A visually noisy image" width="350px">
+                    <img src="images/noise.jpg" alt="A visually noisy image" width="500px">
                     <figcaption><strong>1.2</strong> Clearly visable noise in a digitally captured image</figcaption>
                 </figure>
             </div>
         </div>
         <h3>Videos</h3>
         <div class="row">
-            <div class="column" style="width: 20%; margin-right: 4%;">
+            <div class="basiccolumn" style="width: 30%;">
                 <p>Algorithm-based video editing is much less widely used, but is just as useful for the people who need it.</p>
                 <p>Many consumer-grade algorithms of this nature are included in high-end editing software, such as Premiere, After Effects, and Final Cut Pro.</p>
                 <p>Some features enabled by algorithms are:</p>
@@ -116,21 +104,21 @@
                     <li>Increasing framerate</li>
                 </ul>
             </div>
-            <div class="column" style="margin-right:3%">
-                <figure style="margin: 0%;">
-                    <img src="images/motionblur.jpg" alt="Motion blur added to a video in post" width="560px">
+            <div class="basiccolumn" style="width: 36%;">
+                <figure style="margin: 0%; margin-top: 3%;">
+                    <img src="images/motionblur.jpg" alt="Motion blur added to a video in post" width="510px">
                     <figcaption><strong>2.2</strong> A video given motion blur by Adobe After Effects</figcaption>
                 </figure>
             </div>
-            <div class="column">
-                <figure style="margin: 0%;">
-                    <img src="images/stabilisation.jpg" alt="Editing software carrying out video stabilisation" width="400px">
-                    <figcaption style="width: 400px;"><strong>2.1</strong> A stabilisation algorithm which keeps the recognisable pixels in the red boxes inside the green boxes, by subtly stretching and moving each frame</figcaption>
+            <div class="basiccolumn" style="width: 30%;">
+                <figure style="margin: 0%; margin-top: 3%;">
+                    <img src="images/stabilisation.jpg" alt="Editing software carrying out video stabilisation" width="370px">
+                    <figcaption><strong>2.1</strong> A stabilisation algorithm which keeps the recognisable pixels in the red boxes inside the green boxes, by subtly stretching and moving each frame</figcaption>
                 </figure>
             </div>
         </div>
         <div class="row">
-            <div class="column" style="width: 40%; margin-right: 10%;">
+            <div class="basiccolumn" style="width: 53%; margin-right: 5%;">
                 <p>There have been concerns raised over the use of modern editing capabilities to 'improve' older video files, such as in the following instances:</p>
                 <ul>
                     <li>
@@ -151,46 +139,46 @@
                     </li>
                 </ul>
             </div>
-            <div class="column">
-                <figure style="margin-left: 0%; margin-top: 5%;">
-                    <img src="images/specialedition.jpg" alt="Changes made in the special edition" width="550px">
-                    <figcaption><strong>2.3</strong> Top: The original ending of Return of the Jedi / Bottom: The 'Special Edition'</figcaption>
+            <div class="basiccolumn" style="width: 35%;">
+                <figure style="margin-left: 0%; margin-top: 10%;">
+                    <img src="images/specialedition.jpg" alt="Changes made in the special edition" width="500px">
+                    <figcaption><strong>2.3</strong> Top: The original ending of Star Wars: Return of the Jedi / Bottom: The 'Special Edition'</figcaption>
                 </figure>
             </div>
         </div>
-        <div class="row">
-            <div class="column">
-                <figure style="margin-left: 5%;">
+        <div class="row" style="margin-top: 2%;">
+            <div class="basiccolumn" style="width: 35%; margin-right: 5%;">
+                <figure style="margin-left: 3%;">
                     <img src="images/cat.gif" alt="Frame interpolation used on an animation">
                     <figcaption><strong>2.5</strong> The original video is on the left, and the other video was created through frame interpolation</figcaption>
                 </figure>
             </div>
-            <div class="column">
+            <div class="basiccolumn" style="width: 50%;">
                 <figure style="margin-left: 0%; margin-top: 5%;">
                     <img src="images/interpolation.gif" alt="An example of frame interpolation" style="width: 700px;">
                     <figcaption><strong>2.4</strong> The original video is on the left, and the others are created through frame interpolation</figcaption>
                 </figure>
             </div>
         </div>
-        <h2>More advanced applications</h2>
+        <h2 style="margin-top: 3%;">More advanced applications</h2>
         <h3>Digital art</h3>
-        <p style="width: 90%;">All the applications of computer algorithms discussed so far have aimed to enhance media and media analysis without changing the basic purpose of the media. While framerate interpolation and 'special editions' of films may slightly alter the artistic intent of the work, the work is still intended to be viewed in the same fashion by its consumers. However, digital manipulation can also be used to alter a piece of media to such an extent that the manipulation becomes a work of artistic expression in its own right.</p>
-        <p style="width: 90%;">Consider, for example, the AI-enabled tools available at the <a href="https://deepdreamgenerator.com/">Deep Dream Generator</a>, which are able to blend together two images/textures in a variety of ways to produce a completely visually distinct result.</p>
-        <p style="width: 90%;">These tools emerged from the original 'Deep Dream' tool, which was initially "invented to help scientists and engineers to see what a deep neural network is seeing when it is looking in a given image", but evolved into "a new form of psychedelic and abstract art".</p>
+        <p style="width: 95%;">All the applications of computer algorithms discussed so far have aimed to enhance media and media analysis without changing the basic purpose of the media. While framerate interpolation and 'special editions' of films may slightly alter the artistic intent of the work, the work is still intended to be viewed in the same fashion by its consumers. However, digital manipulation can also be used to alter a piece of media to such an extent that the manipulation becomes a work of artistic expression in its own right.</p>
+        <p style="width: 95%;">Consider, for example, the AI-enabled tools available at the <a href="https://deepdreamgenerator.com/">Deep Dream Generator</a>, which are able to blend together two images/textures in a variety of ways to produce a completely visually distinct result.</p>
+        <p style="width: 95%; margin-bottom: 2%;">These tools emerged from the original 'Deep Dream' tool, which was initially "invented to help scientists and engineers to see what a deep neural network is seeing when it is looking in a given image", but evolved into "a new form of psychedelic and abstract art".</p>
         <div class="row">
-            <div class="column" style="width: 30%;">
+            <div class="basiccolumn" style="width: 28%;">
                 <figure style="margin-left: 0%;">
                     <img src="images/deepstyle.jpg" alt="A merging of a woman's face and a painting of the ocean" width="390px">
                     <figcaption><strong>3.1</strong> An application of the 'Deep Style' tool</figcaption>
                 </figure>
             </div>
-            <div class="column" style="width: 30%;">
+            <div class="basiccolumn" style="width: 28%;">
                 <figure style="margin-left: 0%;">
                     <img src="images/thinstyle.jpg" alt="A merging of a man's face and a painting of a cottage" width="390px">
                     <figcaption><strong>3.2</strong> An application of the 'Thin Style' tool</figcaption>
                 </figure>
             </div>
-            <div class="column" style="width: 30%;">
+            <div class="basiccolumn" style="width: 30%;">
                 <figure style="margin-left: 0%;">
                     <img src="images/deepdream.jpg" alt="A merging of architecture, eyeballs, and animals" width="490px">
                     <figcaption><strong>3.3</strong> An application of the original 'Deep Dream' tool</figcaption>
@@ -198,43 +186,43 @@
             </div>
         </div>
         <div class="row" style="margin-top: 1%;">
-            <div class="column" style="width: 22%; margin-right: 8%;">
+            <div class="basiccolumn" style="width: 35%; margin-right: 2%;">
                 <p>A simpler use of modern image manipulation software is animating still images. The Deep Nostalgia tool provided by MyHeritage is perhaps the most well-known example.</p>
                 <p>This technology was developed for the purpose of animating old family photos, as displayed on the <a href="https://www.myheritage.com/deep-nostalgia">MyHeritage homepage</a>, but works on any image containing a recognisable face. While the technology on display here is certainly impressive, there remains an eerie quality to the final result, similar to the 'uncanny valley' effect of replications of the human form which are <strong>near</strong>-identical.</p>
-                <p>Displayed in this section are just a handful of the many artistic applications of image manipulation algorithms. Advancements in computer science have enabled the emergence of new forms of art, evolved from the building blocks of simple image adjustment techniques.</p>
+                <p>Displayed in this section are just a handful of the many artistic applications of image manipulation algorithms. Advancements in computer science have enabled the emergence of new forms of art, evolved from the building blocks of simple image adjustment techniques.<br><br></p>
             </div>
-            <div class="column" style="width: 35%;">
-                <figure style="margin-left: 0%;">
+            <div class="basiccolumn" style="width: 29%;">
+                <figure style="margin-left: 0%; margin-top: 2%;">
                     <img src="images/skywalkerstill.jpg" alt="A picture of Luke Skywalker" width="390px">
                     <figcaption><strong>3.4</strong> The original image</figcaption>
                 </figure>
             </div>
-            <div class="column" style="width: 35%;">
-                <figure style="margin-left: -5%;">
+            <div class="basiccolumn" style="width: 30%;">
+                <figure style="margin-top: 2%;">
                     <img src="images/skywalkermove.gif" alt="An animated video of Luke Skywalker" width="390px">
                     <figcaption><strong>3.5</strong> The image given motion by MyHeritage</figcaption>
                 </figure>
             </div>
         </div>
         <h3>Deepfakes and ethics</h3>
-        <p>Perhaps the most impressive use of modern computing technology to manipulate media is also its most controversial use. An AI is fed a large number of images of a person's face, usually taken from individual frames of a video, to give it an understanding of what they look like from multiple angles and under different lighting conditions.</p>
-        <p>Using this data of person A, along with data of changing facial expressions and alignment taken from a video of some person B, the video of person B can be adjusted to give them the face of person A.</p>
-        <p>While the above example is relatively harmless, the ethics of using a person's likeness to insert them into a scene without their consent is highly questionable, especially when this technology is used to create pornography, as roughly 96% of online deepfakes are.</p>
-        <p>Thankfully, processing power is still a barrier to most amateur deepfake production. The analysis and re-rendering of thousands of frames of video prevents most low-end hardware from realistically being able to produce deepfakes, although modern hardware is advancing fast enough that things may not stay that way for long.</p>
+        <p style="width: 95%;">Perhaps the most impressive use of modern computing technology to manipulate media is also its most controversial use. An AI is fed a large number of images of a person's face, usually taken from individual frames of a video, to give it an understanding of what they look like from multiple angles and under different lighting conditions.</p>
+        <p style="width: 95%;">Using this data of person A, along with data of changing facial expressions and alignment taken from a video of some person B, the video of person B can be adjusted to give them the face of person A.</p>
+        <p style="width: 95%;">While the above example is relatively harmless, the ethics of using a person's likeness to insert them into a scene without their consent is highly questionable, especially when this technology is used to create pornography, as roughly 96% of online deepfakes are.</p>
+        <p style="width: 95%; margin-bottom: 2%;">Thankfully, processing power is still a barrier to most amateur deepfake production. The analysis and re-rendering of thousands of frames of video prevents most low-end hardware from realistically being able to produce deepfakes, although modern hardware is advancing fast enough that things may not stay that way for long.</p>
         <div class="row">
-            <div class="column">
+            <div class="basiccolumn" style="width: 38%;">
                 <figure style="margin-left: 0%;">
                     <img src="images/frames.jpg" alt="Frames of Matt Parker's face" width="514px">
                     <figcaption><strong>4.1</strong> A collection of frames taken from a video of Matt Parker</figcaption>
                 </figure>
             </div>
-            <div class="column">
+            <div class="basiccolumn" style="width: 45%;">
                 <figure style="margin-left: 0%;">
                     <img src="images/amycage.gif" alt="Amy Adams with Nicolas Cage's face" width="450px">
-                    <figcaption><strong>4.2</strong> This technology used to superimpose Nicolas Cage's face onto Amy Adams</figcaption>
+                    <figcaption><strong>4.2</strong>Nicolas Cage's face deepfaked onto Amy Adams</figcaption>
                 </figure>
             </div>
         </div>
-        <p>Media manipulation technology has come a long way from early days of image adjustment, for the better and the worse. Putting aside the ethical implications of some of the most advanced uses of computer science in this field, strides made have opened the doors to far better looking images and videos, as well whole new genres of digital art and truly impressive synthetic media. Where the technology will go from here is impossible to predict, but this is a field of computing that will only continue to evolve.</p>
+        <p style="margin-top: 1%;">Media manipulation technology has come a long way from early days of image adjustment, for the better and the worse. Putting aside the ethical implications of some of the most advanced uses of computer science in this field, strides made have opened the doors to far better looking images and videos, as well whole new genres of digital art and truly impressive synthetic media. Where the technology will go from here is impossible to predict, but this is a field of computing that will only continue to evolve.</p>
     </body>
 </html>
